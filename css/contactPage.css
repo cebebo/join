@@ -1,0 +1,391 @@
+.hover-effect {
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+  background-color: whitesmoke; 
+}
+
+.hover-farbe {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+  background-color: rgb(42, 54, 71); 
+  transform: scale(1.03); 
+}
+
+.user-list-item {
+  padding-top: 8px;
+  list-style-type: none; 
+  cursor: pointer; 
+  transition: transform 0.3s ease; 
+}
+
+.back-to-contacts {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  position: fixed;
+  height: 96px;
+  padding: 20px 40px 20px 348px;
+  gap: 0px;
+  opacity: 0px;
+  box-shadow: 0px 4px 0px 0px #0000001a;
+}
+
+.header-headline {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 16px;
+}
+
+.header-right-position {
+  margin-right: 0px;
+}
+
+.help-icon {
+  margin: 20px 8px 0 300px;
+}
+
+.user-name {
+  font-size: 22px;
+  color: #29abe2;
+  font-weight: 800;
+  margin-top: 12px;
+}
+
+.user-icon {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headlineUserInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.headlineUserInfo h1 {
+  font-size: 61px;
+  font-weight: 700;
+}
+
+.headlineUserInfo h2 {
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.blueLineUserInfo {
+  width: 4px;
+  height: 50px;
+  background-color: #29abe2;
+}
+
+.user-info-contactInformation{
+  margin-left: 16px;
+}
+
+.user-info-contactInformation h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(27, 25, 25);
+  margin-left: 232px;
+  margin-bottom: auto;
+}
+
+.UsersList-btn {
+  display: flex;
+}
+
+.userList-userInfo {
+  display: flex;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+#addUserBtn {
+  width: 352px;
+  height: 56px;
+  background-color: #2a3647;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border-color: #2a3647;
+  font-size: 24px;
+}
+
+.frame40 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.initials-circle {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50%;
+  background-color: #ccc;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.user-details {
+  flex-grow: 1;
+}
+
+.user-list-container {
+  display: flex;
+}
+
+#userList {
+  width: 100%;
+  height: calc(100vh - 185px);
+  margin-top: 145px;
+  margin-left: 16px;
+  gap: 0px;
+  opacity: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  cursor: pointer;
+  padding: 40px;
+}
+
+hr {
+  width: 100%;
+  margin-left: 1%;
+}
+
+.user-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  position: relative;
+}
+
+#userInfo {
+  margin-left: 42vw;
+  margin-top: 120px;
+  width: 100% !important;
+  margin-right: 40px;
+}
+
+.initials-circle {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.initials-circle-info {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px;
+  font-size: 50px;
+  border: solid 2px white;
+}
+
+.selected {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.user-list hr {
+  margin: 5px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.overlay-content1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 80vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  animation: slide-in 0.8s both;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.closeIcon {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.closeIcon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.circle2-user {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.user-name-info {
+  margin: 16px;
+  font-size: 47px;
+  font-weight: 500;
+}
+
+.img-info-edit-delete {
+  margin-top: -16px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.user-mail-info {
+  margin: 16px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img-edit {
+  color: black;
+  width: 62px;
+  height: 24px;
+}
+
+.img-edit:hover {
+  scale: 1.02;
+  content: url(../img/editHover.png);
+}
+
+.img-delete {
+  margin-left: 8px;
+}
+
+.img-delete:hover {
+  scale: 1.02;
+  content: url(../img/deleteHover.png);
+}
+
+.overlay {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-content2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 80vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  animation: slide-in 0.8s both;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.addUserDaten {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.editUserDaten {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.editLook {
+  width: 453px;
+  height: 592px;
+  margin-top: -20px;
+  margin-left: -20px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 30px;
+  margin-bottom: 8vh;
+}
+
+.center input {
+  width: 90%;
+  height: 50px;
+  border-radius: 8px;
+  gap: 8px;
+  border: 1px solid #d1d1d1;
+  padding-left: 8px;
+}
+
+.center input:hover {
+  border-color: #29abe2;
+}
+

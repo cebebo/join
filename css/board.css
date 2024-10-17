@@ -1,0 +1,459 @@
+.boardContainer {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 232px);
+    position: fixed;
+    right: 0;
+    left: 232px;
+    padding-top: 200px;
+    background-color: #F6F7F8;
+    padding-bottom: 10px;
+    padding-top: 220px;
+}
+
+.topicHover {
+    background-color: #09193111;
+}
+
+.changeTopicArrows {
+    font-size: 32px;
+    display: none;
+    z-index: 10;
+    justify-content: space-around;
+    width: 100%
+}
+
+.arrows {
+    height: 24px;
+}
+
+.arrowRed:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.arrowGreen:hover {
+    background-color: rgba(0, 128, 0, 0.1);
+    border-radius: 50%;
+}
+
+.previewTask {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: dotted lightcoral 1px;
+    border-radius: 8px;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 150px;
+}
+
+.verticalLine {
+    height: 24px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.w150px {
+    width: 150px;
+}
+
+.w25p {
+    width: 300px;
+}
+
+.titleLine {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F6F7F8;
+    padding-top: 350px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+h1,
+h3,
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.mr8 {
+    margin-right: 8px;
+}
+
+.mr24 {
+    margin-right: 24px;
+}
+
+.ml {
+    margin-left: 24px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.marginLR16 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.boardTitle {
+    font-size: 64px;
+    padding-left: 2vw;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.widthTaskBox {
+    width: 252px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    padding: 12px 16px;
+}
+
+.widthTaskBox h3 {
+    overflow: hidden;
+    white-space: wrap;
+}
+
+.widthTaskBox p {
+    overflow: hidden;
+    white-space: wrap;
+}
+
+.topics {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.widthTaskDetails {
+    width: 525px !important;
+    display: flex;
+    max-height: 70vh;
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    margin-bottom: 12px;
+    padding: 68px 40px 38px 40px;
+    border-radius: 30px;
+    animation: slide-in 0.8s both;
+}
+
+.widthTaskDetails::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.widthTaskDetails {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.widthTaskDetails h3 {
+    font-size: 61px;
+}
+
+.widthTaskDetails p {
+    font-size: 20px;
+}
+
+.boardTable {
+    justify-content: space-between;
+    margin-top: 250px;
+    width: 100%;
+}
+
+.icons {
+    height: 18px;
+    padding: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    align-content: center;
+}
+
+.icons:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.categoryBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.boardContainer input {
+    border: 0;
+}
+
+.searchBox {
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.searchBox:hover {
+    border-color: #29ABE2;
+}
+
+.taskContentBox {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.popUpBox:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+}
+
+.popUpBox:active {
+    cursor: grabbing;
+}
+
+.emptyTask {
+    width: 252px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px dashed lightgray;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.categoryBox {
+    color: white;
+    padding: 6px 16px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.categoryLine {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categoryLine img:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+progress[value] {
+    --color: #4589FF;
+    --background: #F4F4F4;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 60%;
+    height: 8px;
+    margin: 0;
+    border-radius: 10em;
+    background: var(--background);
+}
+
+progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--background);
+}
+
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+}
+
+.align-center {
+    align-items: center;
+}
+
+.assigneInitials {
+    color: white;
+    border-radius: 50%;
+    position: relative;
+    margin-left: -7px;
+    border: 1px solid white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.rotateBox {
+    transform: rotate(7deg);
+    transform-origin: bottom left;
+}
+
+.widthFixed {
+    width: 100px;
+}
+
+.prioItem {
+    width: 20px;
+    height: auto;
+}
+
+.fontTitle {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.taskDetails {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: clip;
+}
+
+.subtasksDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.fontDarkGrey {
+    color: #2A3647;
+}
+
+.detailsButton:hover {
+    color: #4589FF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hover:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.clickfinger {
+    cursor: pointer;
+}
+
+.addButton {
+    border: 2px solid #2A3647;
+    padding: 3px;
+    border-radius: 8px;
+    gap: 10px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.addButton:hover {
+    color: #4589FF;
+    border-color: #4589FF;
+}
+
+.headerLogoSmall {
+    height: 39px;
+    margin-left: 24px;
+    display: none;
+}
+
+.headerTitle {
+    display: block;
+}
+
+.boardTopicResponsive {
+    display: none;
+}
+
+.boardTitleBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.boardTitleAddTaskResponsive {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2A3647;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boardTitleAddTaskResponsive:hover {
+    background-color: #29ABE2;
+}
+
+.mbDone {
+    margin-bottom: 128px;
+}
+
+.searchBoxInBoard {
+    padding: 10px;
+}
+
+.searchBox {
+    width: 400px;
+    padding: 10px;
+}
+
+.btnEditBig {
+    display: flex;
+}

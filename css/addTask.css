@@ -1,0 +1,395 @@
+body {
+    margin: 0;
+    background-color: #f6f7f8;
+}
+
+.h1 {
+    font-size: 45px;
+    position: relative;
+    margin-left: 1%;
+    margin-bottom: 40px;
+}
+
+.bigAddTask {
+    margin-top: 140px;
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bigAddTask h1 {
+    font-size: 61px;
+    margin-left: 3%;
+}
+
+.form p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2A3647;
+    width: 100%;
+}
+
+mark {
+    color: #FF8190;
+    background-color: inherit;
+}
+
+select {
+    padding-left: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 16px;
+    width: 95%;
+}
+
+.noBorder:hover {
+    border-color: #29ABE2;
+}
+
+.form-left {
+    width: 440px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title input {
+    width: 100%;
+    height: 36px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.title input[type=text]:focus {
+    border: 0;
+    outline: none;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.description textarea {
+    width: 100%;
+    height: 136px;
+    border-radius: 10px;
+    border: 0;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.description textarea[type=text]:focus {
+    border: 0;
+    outline: none;
+}
+
+label {
+    color: #2A3647;
+}
+
+.assignedTo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.assignedTo select {
+    width: 100%;
+    height: 48px;
+    padding: 12px, 16px, 12px, 16px;
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.assignedTo select:focus {
+    border: 1px solid #29ABE2;
+    outline: none;
+}
+
+.inputBoxAddTask img:hover {
+    cursor: pointer;
+    background-color: #d1d1d1;
+    border-radius: 50%;
+}
+
+.searchBoxAssigne {
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.searchBoxAssigne:hover {
+    border-color: #29ABE2;
+}
+ 
+#searchFieldAddTask {
+    border: none !important;
+    outline: none;
+}
+
+.addTaskLine {
+    width: 0px;
+    height: 450px;
+    border: 1px solid #D1D1D1;
+    margin: 0 20px;
+}
+
+.form-right {
+    width: 440px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dueDate {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dueDate input {
+    width: 100%;
+    height: 36px;
+    padding: 12px, 21px, 12px, 21px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.dueDate input[type=date]:focus {
+    outline: none;
+}
+
+.inputBoxAddTask input[type=text]:focus {
+    outline: none;
+}
+
+select:hover {
+    border:#29ABE2;
+}
+
+.prio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.prio-button {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.prio button {
+    width: 136px;
+    height: 56px;
+    padding: 16px, 10px, 16px, 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 0px 4px 0px #0000001A;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 400;
+}
+
+#button-lowAT:hover {
+    background-color: white;
+}
+
+#button-mediumAT:hover {
+    background-color: white;
+}
+
+#button-urgentAT:hover {
+    background-color: white;
+}
+
+#button-lowIB:hover {
+    background-color: white;
+}
+
+#button-mediumIB:hover {
+    background-color: white;
+}
+
+#button-urgentIB:hover {
+    background-color: white;
+}
+
+.low {
+    background-color: #7AE229 !important;
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.medium {
+    background-color: #FFA800 !important;
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.urgent {
+    background-color: #FF3D00 !important;
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.prio button img {
+    width: 20px;
+}
+
+.task-category {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.task-category select {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task-category option:hover{
+    background-color: #7AE229;
+    padding: 0;
+    margin: 0;
+}
+
+.task-category select:focus {
+    border: 1px solid #29ABE2;
+    outline: none;
+}
+
+.subtasks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#buttonAddSubtaskInBoard {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D1D1D1;
+    cursor: pointer;
+}
+
+#buttonAddSubtaskAT p{
+    color: #D1D1D1;
+}
+
+#buttonAddSubtaskInBoard p {
+    color: #D1D1D1;
+    font-size: 16px;
+}
+
+#buttonAddSubtask p {
+    color: #D1D1D1;
+    font-size: 16px;
+}
+
+#inputDivAddSubtaskInBoard {
+    width: 100%;
+    height: 48px;
+    padding: 12px, 16px, 12px, 16px;
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    font-size: 16px;
+    color: #D1D1D1;
+    display: flex;
+    align-items: center;
+}
+
+#inputDivAddSubtask {
+    width: 100%;
+    height: 48px;
+    padding: 12px, 16px, 12px, 16px;
+    border-radius: 10px;
+    border: 1px solid #D1D1D1;
+    font-size: 16px;
+    color: #D1D1D1;
+    display: flex;
+    align-items: center;
+}
+
+#inputDivAddSubtaskInBoard img {
+    cursor: pointer;
+}
+
+#inputDivAddSubtask img {
+    cursor: pointer;
+}
+
+#inputDivAddSubtaskInBoard p {
+    color: #D1D1D1;
+}
+
+#inputDivAddSubtask p {
+    color: #D1D1D1;
+}
+
+.subtasks input {
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+#subtasksAddTask {
+    height: fit-content;
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+
+.subtaskstoedit {
+    cursor: pointer;
+    width: 100%;
+    height: 18px;
+}
+

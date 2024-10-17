@@ -1,0 +1,337 @@
+@media (max-width: 1400px) {
+
+    .summaryOuterFrame {
+        flex-direction: column-reverse;
+    }
+
+    .summaryRightFrame {
+        width: 100%; 
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media(max-width: 1000px){
+
+    .headlineSummary h1{
+        font-size: 45px;
+    }
+
+    .headlineSummary h3{
+        font-size: 20px;
+    }
+
+    .blueLine{
+        height: 50px;
+    }
+
+    .summaryRightFrame p{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .summaryLeftFrame{
+        height: 510px;
+        width: 510px;
+    }
+
+    .summaryLeftFrame h1{
+        font-size: 50px;
+    }
+
+    .summaryFrameTop{
+        justify-content: space-between;
+        height: 170px;
+    }
+
+    .summaryBoxTop {
+        width: 240px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summaryBoxTop:hover {
+        width: 250px;
+        height: 160px;
+    }
+
+    .summaryFrameCenter{
+        height: 170px;
+    }
+
+    .summaryBoxCenter {
+        width: 510px;
+        height: 150px;
+    }
+
+    .summaryBoxCenter:hover {
+        width: 510px;
+        height: 160px;
+    }
+
+    .summaryFrameBottom{
+        height: 170px;
+    }
+
+    .summaryBoxBottom {
+        width: 150px;
+        height: 150px;
+    }
+
+    .summaryBoxBottom p{
+        width: 100px;
+        text-align: center;
+    }
+
+    .summaryBoxBottom:hover {
+        width: 150px;
+        height: 160px;
+    }
+
+}
+
+@media(max-width: 780px){
+
+    .summaryLeftFrame{
+        width: 430px;
+    }
+
+    .summaryLeftFrame h1{
+        font-size: 50px;
+    }
+
+    .summaryFrameTop{
+        justify-content: space-between;
+        height: 170px;
+        width: 430px;
+    }
+
+    .summaryBoxTop {
+        width: 210px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summaryBoxTop:hover {
+        width: 220px;
+        height: 160px;
+    }
+
+    .summaryFrameCenter{
+        height: 170px;
+        width: 430px;
+    }
+
+    .summaryBoxCenter {
+        width: 430px;
+        height: 150px;
+    }
+
+    .summaryBoxCenter:hover {
+        width: 430px;
+        height: 160px;
+    }
+
+    .summaryFrameBottom{
+        height: 170px;
+        width: 430px;
+    }
+
+    .summaryBoxBottom {
+        width: 135px;
+        height: 150px;
+    }
+
+    .summaryBoxBottom p{
+        width: 100px;
+        text-align: center;
+    }
+
+    .summaryBoxBottom:hover {
+        width: 140px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .helpBorder{
+        margin-top: 128px;
+        margin-bottom: 80px;
+    }
+
+    .headlineSummary{
+        margin-bottom: 30px;
+    }
+
+    .inputField {
+        width: 100%;
+    }
+    
+    .inputSearch {
+        width: 100%;
+        height: 20px;
+    }
+
+    .spaceLeft {
+        display: none;
+    }
+
+    .spaceRight {
+        padding-right: 24px;
+    }
+
+    .allContent {
+        width: 100%;
+        overflow-x: hidden;
+        padding-left: 0;
+    }
+
+    .horizontal {
+        width: 100%;
+    }
+
+    .vertical p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .summaryIcon {
+        width: 48px;
+    }
+
+    .greyLine {
+        width: 2px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .helpBorder {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .summaryBoxBottom p{
+        width: 90px;
+    }
+
+}
+
+@media(max-width: 500px){
+
+    .headlineSummary{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5%;
+        gap: 16px;
+    }
+
+    .blueLine{
+        display: none;
+    }
+
+    .blueLineMobile {
+        height: 3px;
+        width: 80px;
+        background-color: #29ABE2;
+        display: block;
+    }
+
+    .summaryOuterFrame{
+        width: 100vw;
+    }
+
+    .summaryRightFrame{
+        display: none;
+    }
+
+    .summaryLeftFrame{
+        width: 90vw;
+        height: 80%;
+        padding: 5%;
+    }
+
+    .summaryLeftFrame h1{
+        font-size: 50px;
+    }
+
+    .summaryFrameTop{
+        justify-content: space-between;
+        height: 120px;
+        width: 100%;
+    }
+
+    .summaryBoxTop {
+        width: 42vw;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summaryBoxTop:hover {
+        width: 43vw;
+        height: 115px;
+    }
+
+    .summaryFrameCenter{
+        height: 120px;
+        width: 100%;
+    }
+
+    .summaryBoxCenter {
+        width: 90vw;
+        height: 110px;
+    }
+
+    .summaryBoxCenter:hover {
+        width: 90vw;
+        height: 115px;
+    }
+
+    .summaryFrameBottom{
+        height: 120px;
+        width: 100%;
+    }
+
+    .summaryBoxBottom {
+        width: 27vw;
+        height: 110px;
+    }
+
+    .summaryBoxBottom p{
+        width: 100px;
+        text-align: center;
+    }
+
+    .summaryBoxBottom:hover {
+        width: 28vw;
+        height: 115px;
+    }
+
+    .popUpBox {
+        width: 90%;
+    }
+}
+
+@media(max-height: 400px){
+    .helpBorder{
+        margin: 0;
+        margin-top: 40px;
+    }
+}

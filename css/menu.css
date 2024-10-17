@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+.upperBox {
+    width: calc(100% - 235px);
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px #0000001A;
+    font-size: 20px;
+    top: 0;
+    left: 235px;
+    position: fixed;
+    z-index: 997;
+}
+
+.headLine{
+    width: calc(100% - 232px);
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px #0000001A;
+    font-size: 20px;
+    top: 0;
+    left: 232px;
+    position: fixed;
+    z-index: 997;  
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header img {
+    width: 20px;
+    height: 20px;
+}
+
+nav {
+    height: calc(100vh - 128px);
+    width: 235px;
+    background-color: #2a3647;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    font-size: 16px;
+    left: 0;
+    position: fixed;
+    z-index: 997;
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.a1 {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 46px;
+    gap: 8px;
+    padding: 8px 63px;
+}
+
+.a2 {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 46px;
+    gap: 8px;
+    padding: 8px 63px 8px 63px;
+}
+
+.a3 {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 46px;
+    gap: 8px;
+    padding: 8px 89px 8px 63px;
+}
+
+.a4 {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 46px;
+    gap: 8px;
+    padding: 8px 64px 8px 63px;
+}
+
+.menu a:hover {
+    background-color: #2a3d59;
+}
+
+.menu img {
+    width: 30px;
+}
+
+.termsAndConditions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.termsAndConditions a {
+    text-decoration: none;
+    color: #a8a8a8;
+    line-height: 19px;
+    width: 110px;
+}
+
+.termsAndConditions a:hover {
+    font-weight: bold;
+    color: #29ABE2;
+}
+
+.d-none{
+    display: none;
+}
+
+@media (max-width: 750px){
+    .headLine p{
+        display: none;
+    }
+
+    .headLine{
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 700px){
+
+    body{
+        display: block;
+    }
+
+    .upperBox{
+        height: 80px;
+        width: 100vw;
+        left: 0;
+        padding: 0;
+    }
+
+    .headLine{
+        justify-content: space-between;
+        left: 0;
+        width: 100%;
+    }
+
+    .header-right img{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    nav {
+        height: 80px;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        background-color: #2a3647;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        padding: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+    }
+
+    .navigation {
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: #2a3647;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        padding: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: 90;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 0px;
+        width: 100vw;
+        padding: 0px;
+    }
+
+    .menu img{
+       
+        width: 24px;
+    }
+    
+    .a1 {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 17px 40px 17px 40px;
+        border-radius: 10px;
+    }
+    
+    .a2 {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 17px 40px 17px 40px;
+        border-radius: 10px;
+    }
+    
+    .a3 {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 17px 40px 17px 40px;
+        border-radius: 10px;
+    }
+    
+    .a4 {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 17px 40px 17px 40px;
+        border-radius: 10px;
+    }
+    
+    .menu img {
+        width: 30px;
+        height: 30px;
+        margin-top: -1px;
+        align-items: baseline;
+    }
+    
+    .termsAndConditions {
+        display: none;
+    }
+    
+}
+
+@media(max-width: 610px){
+    .a1 {
+        padding: 17px 20px 17px 20px;
+    }
+    
+    .a2 {
+        padding: 17px 20px 17px 20px;
+    }
+    
+    .a3 {
+        padding: 17px 20px 17px 20px;
+    }
+    
+    .a4 {
+        padding: 17px 20px 17px 20px;
+    }
+}
+
+@media(max-width: 430px){
+    .a1 {
+        padding: 17px 5px 17px 5px;
+    }
+    
+    .a2 {
+        padding: 17px 5px 17px 5px;
+    }
+    
+    .a3 {
+        padding: 17px 5px 17px 5px;
+    }
+    
+    .a4 {
+        padding: 17px 5px 17px 5px;
+    }
+}
+
+@media(max-height: 600px){
+    .logo {
+        width: 48px;
+    }
+
+    .menu {
+        gap: 5px;
+    }
+
+    .navigation {
+        height: calc(100vh - 94px);
+        padding-top: 30px;
+    }
+}
+
+@media(max-height: 450px){
+    .logo {
+        width: 48px;
+    }
+
+    .menu {
+        gap: 5px;
+    }
+}
+
+@media(max-height: 400px){
+    .logo {
+        width: 32px;
+    }
+
+    .navigation{
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .menu{
+        padding: 0;
+        margin: 0;
+    }
+
+    .termsAndConditions{
+        padding: 20px;
+    }
+
+    .upperBox{
+        display: none;
+    }
+
+    .activeUserInitials{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

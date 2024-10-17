@@ -1,0 +1,198 @@
+@media (max-width: 1430px) {
+    .boardTable {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 200px;
+        width: 100%;
+        padding-top: 42px;
+    }
+
+    .taskContentBox {
+        flex-direction: row;
+        align-items: flex-start;
+        /* margin-right: 150px; */
+        margin-left: 10px;
+        padding-bottom: 32px;
+        min-height: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        box-sizing: content-box;
+    }
+
+    .taskContentBox::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari, Opera */
+    }
+
+    .taskContentBox {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .widthTaskBox {
+        margin-right: 6px;
+        margin-top: 18px;
+        margin-left: 16px;
+        min-width: 252px !important;
+    }
+
+    .boardTopicResponsive {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+    }
+
+    .categoryBoard {
+        align-items: baseline;
+    }
+
+    .titleLine {
+        display: none;
+    }
+
+    .previewTask {
+        margin-top: 0;
+        margin-left: 150px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    
+}
+
+@media (max-width: 1100px) {
+
+    .searchBoxInBoard {
+        padding: 10px;
+        justify-content: flex-end;
+    }
+
+    .searchBox{
+        width: 300px;
+    }
+
+    .boardTable {
+        margin-top: 250px;
+    }
+
+    .boardTitle {
+        margin-left: 0px;
+    }
+
+    .boardTitleBox {
+        justify-content: space-between;
+        width: 40vw;
+    }
+    
+    .addTaskButton {
+        display: none;
+    }
+
+    .boardTitleAddTaskResponsive {
+        display: flex;
+    }
+
+    .headBox{
+        flex-direction: column;
+        padding-top: 292px;
+        padding-left: 0 !important;
+    }
+
+}
+
+@media(max-width: 900px){
+    
+
+    .searchBoxInBoard{
+        width: 95%;
+    }
+
+    .searchBox{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .boardTitleBox{
+        width: 95%;
+    }
+
+    .boardTitle{
+        padding-left: 0;
+    }
+    
+    .changeTopicArrows {
+        display: flex;
+    }
+}
+
+@media (max-width: 700px) {
+    .allContent {
+        padding-left: 0px !important;
+    }
+
+    .headerTitle {
+        display: none;
+    }
+
+    .headerLogoSmall {
+        display: block;
+    }
+
+    .headBox{
+        width: 100%;
+        left: 0;
+        padding-left: 20px;
+    }
+
+    .widthTaskDetails{
+        width: 80vw !important;
+        max-height: 80vh;
+    }
+
+}
+
+@media(max-width: 500px){
+    .fontTitle{
+        font-size: 30px;
+    }
+
+    #assignDetails{
+        height: 50px;
+        overflow-y: scroll;
+    }
+
+    #btnCreateTaskIB, #btnSaveChangesIB {
+        width: 150px;
+    }
+
+    .widthTaskDetails {
+        width: 90% !important;
+        padding: 36px 16px 12px 36px;
+    }
+}
+
+@media(max-height: 550px) {
+
+ .mb24 {
+    margin-bottom: 8px;
+ }  
+
+} 
+
+
+@media(max-height: 400px){
+
+    .boardTable{
+        margin-top: 20px;
+    }
+
+    .widthTaskDetails{
+        overflow-y: scroll;
+    }
+}

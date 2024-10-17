@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Add Task</title>
+    <link rel="stylesheet" href="./css/addTask.css">
+    <link rel="stylesheet" href="./css/addTaskResp.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/responsiveness.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/board.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="./scripts/addTask.js"></script>
+    <script src="./scripts/board.js"></script>
+    <script src="./scripts/contactPage.js"></script>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/storage.js"></script>
+    <script src="./scripts/templates.js"></script>
+</head>
+
+<body onload="initAddTask()">
+    <div class="navigation">
+        <img class="logo" src="./img/logo_white.png">
+        <div class="menu" style="padding-top: 0px;">
+            <a class="a1" href="./summary.html"><img src="./img/summary.png" alt="">Summary</a>
+            <a class="a2 activePage" href="./addTask.html"><img src="./img/add_Task.png" alt="">Add Task</a>
+            <a class="a3" href="./board.html"><img src="./img/board.png" alt="">Board</a>
+            <a class="a4" href="./contactPage.html"><img src="./img/contac.png" alt="">Contacts</a>
+        </div>
+        <div class="termsAndConditions">
+            <a href="./consent/privacyPolicy.html">Privacy Policy</a>
+            <a href="./consent/legalNotice.html">Legal notice</a>
+        </div>
+    </div>
+
+    <div class="allContent">
+        <div class="upperBox">
+            <div class="headLine">
+                <p class="fontHeader spaceLeft">Kanban Project Management Tool</p>
+                <img src="./img/logo.png" class="headerLogoSmall" id="headerLogo">
+                <div class="header-right spaceRight">
+                    <a href="./consent/help.html"><img src="./img/help-icon.png" class="helpIcon"></a>
+                    <div id="activeUserAddTask" class="activeUserInitials" onclick="userMenu('AddTask')"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bigAddTask">
+            <form onsubmit="createTask('AT'); return false">
+                <h1 class="h1">Add Task</h1>
+                <div class="form">
+                    <div class="form-left">
+                        <div class="title">
+                            <p>Title<mark>*</mark></p>
+                            <div class="inputBoxAddTask">
+                                <input type="text" name="title" id="titleAddTaskAT" placeholder="Enter a title"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Description</p>
+                            <div class="inputBoxAddTask" style="height: 150px !important; display: table;">
+                                <textarea type="text" name="description" id="descriptionAddTaskAT"
+                                    placeholder="Enter a description" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="assignedTo">
+                            <label for="assignedTo">Assigned to</label>
+                            <div class="searchBoxAssigne">
+                                <input class="inputSearch inputField" id="searchFieldAddTaskAT"
+                                    placeholder="Select contacs to assign" onclick="searchAssignedPeople('AT')"
+                                    onkeyup="searchSpecificUser('AT')">
+                                <div class="icons" onclick="searchAssignedPeople('AT')">&#9207;</div>
+                            </div>
+                            <div class="dropDownUserListToAssigne d-none" id="dropDownUserListToAssigneAT"></div>
+                            <div class="showAssignedUsersStickers" id="showAssignedUsersStickersAT"></div>
+                        </div>
+                    </div>
+
+                    <div class="addTaskLine"></div>
+
+                    <div class="form-right">
+                        <div class="dueDate">
+                            <p>Due Date<mark>*</mark></p>
+                            <div class="inputBoxAddTask">
+                                <input type="date" id="dueDateAddTaskAT" name="dueDate" required>
+                            </div>
+                        </div>
+                        <div class="prio">
+                            <p>Prio</p>
+                            <div class="prio-button">
+                                <button id="button-urgentAT" onclick="changePrio('urgent', 'AT')" type="button">Urgent
+                                    <img id="img-urgentAT" src="./img/urgent.png" alt=""> <img id="img-urgent-whiteAT"
+                                        class="d-none" src="./img/urgent_white.png" alt=""> </button>
+                                <button id="button-mediumAT" class="medium" onclick="changePrio('medium', 'AT')"
+                                    type="button">Medium
+                                    <img id="img-mediumAT" class="d-none" src="./img/medium.png" alt=""> <img
+                                        id="img-medium-whiteAT" src="./img/medium_white.png" alt=""> </button>
+                                <button id="button-lowAT" onclick="changePrio('low', 'AT')" type="button">Low <img
+                                        id="img-lowAT" src="./img/low.png" alt=""> <img id="img-low-whiteAT"
+                                        class="d-none" src="./img/low_white.png" alt="">
+                                </button>
+                                <p id="button-valueAT" class="d-none">medium</p>
+                            </div>
+                        </div>
+                        <div class="task-category">
+                            <p>Category<mark>*</mark></p>
+                            <select id="categoryAddTaskAT" name="category" class="noBorder" required>
+                                <option selected disabled hidden value="">Select Category</option>
+                                <option value="User Story">User Story</option>
+                                <option value="Technical Task">Technical Task</option>
+                            </select>
+                        </div>
+                        <div class="subtasks">
+                            <p>Subtasks</p>
+                            <div class="inputBox borderGrey">
+                                <input class="inputField" type="text" id="inputAddSubtaskAT"
+                                    placeholder="Add new subtask" onclick="changeToSubtaskInput('AT')">
+                                <img id="addImg1AT" src="./img/add.png" onclick="changeToSubtaskInput('AT')"
+                                    class="cursorPointer">
+                                <div id="subtasksControllerAT" class="subtasksController d-none">
+                                    <p style="font-size: 20px;" onclick="addSubtask('AT')">&#10004;</p>
+                                    <h3> | </h3>
+                                    <p style="font-size: 20px;" onclick="cancelSubtask('AT')">&#128938;</p>
+                                </div>
+
+                            </div>
+                            <ul id="subtasksAddTaskAT"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="black"><mark>*</mark>This field is required</p>
+                    <div class="bottom-button">
+                        <button onclick="clearAddTask('AT')" type="button" class="clear">Clear <img
+                                src="./img/cancel.png"></button>
+                        <button class="create">Create Task <img src="./img/check.png"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="userMenuBox d-none" id="userMenuBoxAddTask">
+        <a href="./consent/privacyPolicy.html">
+            <div class="userMenuOption" onclick="userMenu('AddTask')">Pricacy Policy</div>
+        </a>
+        <a href="./consent/legalNotice.html">
+            <div class="userMenuOption" onclick="userMenu('AddTask')">Legal Notice</div>
+        </a>
+        <a href="./login.html">
+            <div class="userMenuOption" onclick="userMenu('AddTask'), logout()">Logout</div>
+        </a>
+    </div>
+
+</body>
+
+</html>

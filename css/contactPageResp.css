@@ -1,0 +1,292 @@
+@media (max-width: 1250px) {
+    .headlineUserInfo h1 {
+      font-size: 50px;
+    }
+  
+    .headlineUserInfo h2 {
+      font-size: 24px;
+    }
+  
+    .blueLineUserInfo {
+      height: 45px;
+    }
+    
+  }
+  
+  @media (max-width: 1150px) {
+    .headlineUserInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 30px 0;
+    }
+  
+    .headlineUserInfo h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+  
+    .blueLineUserInfo {
+      width: 10vw;
+      height: 4px;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .initials-circle-info {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      font-size: 40px;
+    }
+  
+    .user-name-info {
+      font-size: 35px;
+    }
+  
+    .circle2-user {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+  
+    .user-name-info {
+      font-size: 30px;
+    }
+  
+    .img-info-edit-delete img {
+      height: 20px;
+      width: auto;
+    }
+  
+    .btn {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .overlay-content1 {
+      display: flex;
+      flex-direction: column;
+      width: 70vw;
+      height: 90vh;
+      gap: 0;
+    }
+  
+    .overlay-content2 {
+      display: flex;
+      flex-direction: column;
+      width: 70vw;
+      height: 90vh;
+      gap: 0;
+    }
+  
+    .contact-popup-left {
+      width: calc(70vw - 10%);
+      padding-left: 10%;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 9px;
+      padding-top: 10vh;
+      padding-bottom: 15vh;
+    }
+  
+    .contact-popup-left img {
+      display: none;
+    }
+  
+    .addPersonPic {
+      position: relative;
+      top: -80px;
+    }
+  
+    .initialsEdit {
+      position: relative;
+      top: -80px;
+    }
+  
+    .addUserDaten {
+      width: 70vw;
+      padding-top: 0;
+      padding-bottom: 0;
+      position: relative;
+      top: -5vh;
+    }
+  
+    .editUserDaten {
+      width: 70vw;
+      padding-top: 0;
+      padding-bottom: 0;
+      position: relative;
+      top: -7vh;
+    }
+  
+    .imgClose {
+      position: relative;
+      top: -350px;
+    }
+  
+    .imgClose img {
+      content: url(../img/close_white.png);
+    }
+  
+    .contactLeft {
+      width: calc(100% - 232px);
+      height: 100vh;
+      overflow-y: hidden;
+    }
+  
+    #userInfo {
+      margin-left: 0px;
+      margin-top: 100px;
+      margin-right: 0;
+      margin-bottom: 0;
+      padding-left: 20px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      background-color: white;
+      overflow-y: scroll;
+    }
+  
+    .circle2-user {
+      padding-left: 0 !important;
+      width: calc(100% - 232px);
+    }
+  
+    .frame40 {
+      display: none;
+      margin-top: 0;
+    }
+  
+    .img-info-edit-delete{
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .addUserButtonDiv {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .btn {
+      width: 90%;
+      margin-left: 0;
+    }
+  
+    .headlineUserInfo {
+      display: none;
+    }
+  
+    .back-to-contacts {
+      display: block;
+      cursor: pointer;
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .img-info-edit-delete {
+      margin-left: 16px;
+    }
+  
+    .btn img {
+      height: 30px;
+      width: auto;
+    }
+  
+    .contactLeft{
+      width: 100%;
+    }
+  
+    #userList {
+      height: calc(100vh - 265px);
+      margin-bottom: 80px;
+      width: 100%;
+    }
+  
+    .addUserButtonDiv{
+      width: 100vw;
+    }
+  
+    .circle2-user{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+  
+    .overlay-content1 {
+      width: 90vw;
+    }
+  
+    .overlay-content2 {
+      width: 90vw;
+    }
+  
+    .contact-popup-left {
+      width: calc(90vw - 10%);
+    }
+  
+    .addUserDaten {
+      width: 90vw;
+    }
+  
+    .editUserDaten {
+      width: 90vw;
+    }
+    
+  }
+  
+  @media (max-height: 750px) {
+    .contact-popup-left {
+      padding-top: 5vh;
+      padding-bottom: 10vh;
+    }
+  
+    .addUserDaten {
+      top: -15vh;
+    }
+  
+    .center {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-height: 400px) {
+    .overlay-content1 {
+      overflow-y: scroll;
+    }
+  
+    .overlay-content2 {
+      overflow-y: scroll;
+    }
+  
+    .imgClose {
+      position: relative;
+      top: -280px;
+    }
+  
+    .addUserButtonDiv {
+      height: 120px;
+    }
+  
+    .btn {
+      margin-top: 40px;
+    }
+  
+    #userList {
+      margin-top: 80px;
+    }
+  
+    #userInfo {
+      margin-top: 20px;
+    }
+  }
+  
